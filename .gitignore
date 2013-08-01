@@ -1,0 +1,17 @@
+obj/
+bin/
+.DS*
+._*
+.*.sw*
+*.swp
+.project
+*.elf
+.App*
+*.ihex
+*.obj
+*/latex/*
+*.tex
+*.pdf
+*.md5
+build/
+MSP430_USB_DevelopersPackage_3_20_02/
