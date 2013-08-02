@@ -1695,6 +1695,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </symbols>
 <devicesets>
 <deviceset name="MICROSD-MOLEX">
+<description>SD Card connector from Molex
+PN 0472192001</description>
 <gates>
 <gate name="G$1" symbol="SD_BREAKOUT" x="22.86" y="10.16"/>
 </gates>
@@ -2613,6 +2615,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <text x="223.52" y="17.78" size="2.54" layer="94" font="fixed">Changelog</text>
 <wire x1="111.76" y1="109.22" x2="111.76" y2="0" width="0.1524" layer="94" style="shortdash"/>
 <text x="114.3" y="104.14" size="2.54" layer="94" font="fixed">USB</text>
+<text x="231.14" y="35.56" size="1.27" layer="94" font="fixed">Molex SD Card connector
+PN 0472192001</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="48.26" y="63.5"/>
@@ -3076,4 +3080,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
