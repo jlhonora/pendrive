@@ -5,9 +5,7 @@ This repo contains all the necessary material to build your own open-source pend
 
 The microcontroller used is a TI msp430 of the F55xx family (msp430F5510 for now).
 
-To use this library you need to [install mspgcc](https://github.com/jlhonora/mspgcc-install) and the __rake__ utility:
-
-    $ sudo apt-get install rake
+To use this library you need to [install mspgcc](https://github.com/jlhonora/mspgcc-install) and the __rake__ utility.
 
 *WARNING*: The available code has only been tested on the [msp-exp430f5529](http://www.ti.com/tool/msp-exp430f5529) board. The PCB files are only an initial draft, and not a single one has been produced/tested.
 
