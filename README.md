@@ -20,6 +20,7 @@ The principles on which this project is built are the following:
 - Open source code and designs
 - Relatively easy soldering/assembly
 - Expandable memory
+- Small footprint/dimension
 
 ## Building the source code ##
 
