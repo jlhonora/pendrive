@@ -84,9 +84,6 @@ void Board_init(void)
     P6OUT &= ~(BIT6 + BIT7);
     P6DIR |= BIT6 + BIT7;
 
-    P7OUT &= ~(BIT0 + BIT1 + BIT2 + BIT3 + BIT5 + BIT7);
-    P7DIR |= BIT0 + BIT1 + BIT2 + BIT3 + BIT5 + BIT7;
-
     // LEDs
     P1SEL &= ~(BIT1 | BIT2 | BIT3 | BIT4 | BIT5);
     P1DIR |= (BIT1 | BIT2 | BIT3 | BIT4 | BIT5);

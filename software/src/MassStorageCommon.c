@@ -41,7 +41,6 @@
 #include "HAL_UCS.h"
 #include "HAL_Board.h"
 #include "HAL_Buttons.h"
-//#include "HAL_Dogs102x6.h"
 #include "mmc.h"
 #include "diskio.h"                         // Low level disk interface module from the FatFs
                                             // package

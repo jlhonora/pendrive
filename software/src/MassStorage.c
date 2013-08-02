@@ -46,7 +46,6 @@
 #include "HAL_UCS.h"
 #include "HAL_Board.h"
 #include "HAL_Buttons.h"
-//#include "HAL_Dogs102x6.h"
 #include "mmc.h"
 #include "diskio.h" // Low level disk interface module from the FatFs package
 #include "device.h"
@@ -117,22 +116,18 @@ void MassStorage(void)
             DEBUG("Connection state: %u\r\n", USB_connectionState());
             case ST_USB_DISCONNECTED:
                 //__bis_SR_register(LPM3_bits + GIE);    // Enter LPM3 until VBUS-on event
-                P8OUT |= BIT1;
                 _NOP();
                 break;
 
             case ST_USB_CONNECTED_NO_ENUM:
-                P1OUT |= BIT4;
                 break;
 
             case ST_ENUM_ACTIVE:
 
                 msc_Loop();
-                P1OUT |= BIT5;
                 break;
 
             case ST_ENUM_SUSPENDED:
-                P1OUT |= BIT0;
                 //__bis_SR_register(LPM3_bits + GIE);    // Enter LPM3, until a resume or VBUS-off
                                                        // event
                 break;
@@ -141,7 +136,6 @@ void MassStorage(void)
                 break;
 
             case ST_ERROR:
-                P8OUT |= BIT2;
                 break;
             default:;
         }
@@ -154,7 +148,6 @@ void MassStorage(void)
     SFRIE1 &= ~OFIE;
     Init_FLL_Settle(25000, 762);          // Return to normal clock settings
     SFRIE1 |= OFIE;
-    //Dogs102x6_clearScreen();
 }
 
 /***************************************************************************//**
